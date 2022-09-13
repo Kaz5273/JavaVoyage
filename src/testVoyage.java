@@ -21,4 +21,11 @@ public class testVoyage {
         assertEquals(40.0, optionVoyage.prix(), DELTA);
     }
 
+    @Test
+    public void TestPrixSejour() {
+        Sejour sejour = new Sejour("Sejour au camping", 20.0, 10, 30.0);
+
+        assertEquals(320.0, sejour.PrixSejour(), DELTA);
+    }
+
 }

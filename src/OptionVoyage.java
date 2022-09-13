@@ -45,4 +45,8 @@ public class OptionVoyage {
         return _nom;
     }
 
+    public double get_prixforfaitaire() {
+        return _prixforfaitaire;
+    }
+
 }
