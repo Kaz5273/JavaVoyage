@@ -18,11 +18,6 @@ public class OptionVoyage {
     }
 
     public double prix() {
-
-        return this._prixforfaitaire;
-    }
-
-    public double tarifreduit() {
         double result = _prixforfaitaire;
 
         if (_tarifreduit == true) {
@@ -36,7 +31,7 @@ public class OptionVoyage {
     @Override
     public String toString() {
         String result;
-        result = this._nom + " -> " + this._prixforfaitaire + " euros";
+        result = this._nom + " -> " + prix() + " euros";
         return result;
 
     }

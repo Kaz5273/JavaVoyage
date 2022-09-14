@@ -10,7 +10,7 @@ public class Sejour extends OptionVoyage {
         this._prixparnuit = unPrixParNuit;
     }
 
-    public double PrixSejour() {
+    public double prix() {
         double result;
         result = (_nbrnuit * _prixparnuit) + super.get_prixforfaitaire();
         return result;
