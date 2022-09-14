@@ -29,10 +29,17 @@ public class testVoyage {
     }
 
     @Test
-    public void TestTransport() {
+    public void TestTransportTRUE() {
         Transport transport = new Transport("une croisiere", 0.00, true);
 
         assertEquals(1500.0, transport.prix(), DELTA);
+    }
+
+    @Test
+    public void TestTransportFALSE() {
+        Transport transport = new Transport("une croisiere", 50.0);
+
+        assertEquals(250.0, transport.prix(), DELTA);
     }
 
 }
