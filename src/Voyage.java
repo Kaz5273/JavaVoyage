@@ -32,27 +32,25 @@ public class Voyage {
 
 		// FIN TEST 2 */
 
-		/*
-		 * //TEST 3
-		 * System.out.println("Test partie 3 : ");
-		 * System.out.println("----------------");
-		 * 
-		 * KitVoyage kit1 = new KitVoyage("Zurich", "Paris");
-		 * kit1.ajouterOption(new Transport("Trajet en train", 50.0));
-		 * kit1.ajouterOption(new Sejour("Hotel 3* : Les amandiers ", 40.0, 5, 100.0));
-		 * System.out.println(kit1.toString());
-		 * System.out.println();
-		 * kit1.annuler();
-		 * 
-		 * KitVoyage kit2 = new KitVoyage("Zurich", "New York");
-		 * kit2.ajouterOption(new Transport("Trajet en avion", 50.0, true));
-		 * kit2.ajouterOption(new Sejour("Hotel 4* : Ambassador Plazza  ", 100.0, 2,
-		 * 250.0));
-		 * System.out.println(kit2.toString());
-		 * kit2.annuler();
-		 * 
-		 * //FIN TEST 3
-		 */
+		// TEST 3
+		System.out.println("Test partie 3 : ");
+		System.out.println("----------------");
+
+		KitVoyage kit1 = new KitVoyage("Zurich", "Paris");
+		kit1.ajouterOption(new Transport("Trajet en train", 50.0));
+		kit1.ajouterOption(new Sejour("Hotel 3* : Les amandiers ", 40.0, 5, 100.0));
+		System.out.println(kit1.toString());
+		System.out.println();
+		// kit1.annuler();
+
+		KitVoyage kit2 = new KitVoyage("Zurich", "New York");
+		kit2.ajouterOption(new Transport("Trajet en avion", 50.0, true));
+		kit2.ajouterOption(new Sejour("Hotel 4* : Ambassador Plazza ", 100.0, 2,
+				250.0));
+		System.out.println(kit2.toString());
+		// kit2.annuler();
+
+		// FIN TEST 3
 
 	}
 }

@@ -42,4 +42,22 @@ public class testVoyage {
         assertEquals(250.0, transport.prix(), DELTA);
     }
 
+    @Test
+    public void TestKitVoyagePrix() {
+        KitVoyage unKitOption = new KitVoyage("Paris", "Zurich");
+        unKitOption.ajouterOption(new Sejour("Hotel 3* : Les amandiers", 40.0, 5, 100));
+        unKitOption.ajouterOption(new Transport("Trajet en train", 50.0));
+
+        assertEquals(790.0, unKitOption.prix(), DELTA);
+    }
+
+    @Test
+    public void TestGetNb() {
+        KitVoyage unKitOption = new KitVoyage("Paris", "Zurich");
+        unKitOption.ajouterOption(new Sejour("Hotel 3* : Les amandiers", 40.0, 5, 100));
+        unKitOption.ajouterOption(new Transport("Trajet en train", 50.0));
+
+        assertEquals(2, unKitOption.getNbOptions());
+    }
+
 }
