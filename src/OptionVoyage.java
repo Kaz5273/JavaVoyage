@@ -1,5 +1,5 @@
 
-public class OptionVoyage {
+public abstract class OptionVoyage {
     private String _nom;
     private double _prixforfaitaire;
     private boolean _tarifreduit;

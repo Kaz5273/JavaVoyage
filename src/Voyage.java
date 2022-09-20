@@ -5,14 +5,15 @@ public class Voyage {
 	 */
 	public static void main(String[] args) {
 		// TEST 1
-		System.out.println("Test partie 1 : ");
-		System.out.println("----------------");
-		OptionVoyage option1 = new OptionVoyage("Sejour au camping", 40.0);
-		System.out.println(option1.toString());
+		// System.out.println("Test partie 1 : ");
+		// System.out.println("----------------");
+		// OptionVoyage option1 = new OptionVoyage("Sejour au camping", 40.0);
+		// System.out.println(option1.toString());
 
-		OptionVoyage option2 = new OptionVoyage("Visite guidee : London by night", 50.0);
-		System.out.println(option2.toString());
-		System.out.println();
+		// OptionVoyage option2 = new OptionVoyage("Visite guidee : London by night",
+		// 50.0);
+		// System.out.println(option2.toString());
+		// System.out.println();
 
 		// FIN TEST 1 */
 

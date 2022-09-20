@@ -5,21 +5,22 @@ import org.junit.Test;
 public class testVoyage {
     private static final double DELTA = 1e-2;
 
-    @Test
-    public void TestPartie1() {
-        OptionVoyage optionVoyage = new OptionVoyage("Sejour au camping", 40.0);
+    // @Test
+    // public void TestPartie1() {
+    // OptionVoyage optionVoyage = new OptionVoyage("Sejour au camping", 40.0);
 
-        assertEquals("Sejour au camping", optionVoyage.get_nom());
-        assertEquals(40.0, optionVoyage.prix(), DELTA);
+    // assertEquals("Sejour au camping", optionVoyage.get_nom());
+    // assertEquals(40.0, optionVoyage.prix(), DELTA);
 
-    }
+    // }
 
-    @Test
-    public void TestTarifReduit() {
-        OptionVoyage optionVoyage = new OptionVoyage("Sejour au camping", 40.0, true);
-        assertEquals(32.0, optionVoyage.prix(), DELTA);
+    // @Test
+    // public void TestTarifReduit() {
+    // OptionVoyage optionVoyage = new OptionVoyage("Sejour au camping", 40.0,
+    // true);
+    // assertEquals(32.0, optionVoyage.prix(), DELTA);
 
-    }
+    // }
 
     @Test
     public void TestPrixSejour() {
@@ -58,6 +59,22 @@ public class testVoyage {
         unKitOption.ajouterOption(new Transport("Trajet en train", 50.0));
 
         assertEquals(2, unKitOption.getNbOptions());
+    }
+
+    @Test
+    public void TestPrixRestau() {
+        Restaurant unRestaurant = new Restaurant("Hotel 3* : Les amandiers", 40.0, "Paul Bocuse", 250.0);
+        assertEquals(290.0, unRestaurant.prix(), DELTA);
+    }
+
+    @Test
+    public void TestToutLesKit() {
+        KitVoyage unKitOption = new KitVoyage("Paris", "Zurich");
+        unKitOption.ajouterOption(new Sejour("Hotel 3* : Les amandiers", 40.0, 5, 100));
+        unKitOption.ajouterOption(new Transport("Trajet en train", 50.0));
+        unKitOption.ajouterOption(new Restaurant("Sejour camping", 40.0, "Paul Bocuse", 250.0));
+
+        assertEquals(1080.0, unKitOption.prix(), DELTA);
     }
 
 }
